@@ -435,13 +435,13 @@ var start = async (params) => {
   );
 
   // 首页-签到有礼-免费领-猜拳拿话费
-  /*await scheduler.regTask(
+  await scheduler.regTask(
     "dailyFingerqd",
     async (request) => {
       await require("./dailyFingerqd.js").doTask(request, options);
     },
     taskOption
-  );*/
+  );
 
 };
 module.exports = {
