@@ -199,7 +199,16 @@ var start = async (params) => {
   await scheduler.regTask(
     "jflottery",
     async (request) => {
-      await require("./jflotteryad").doTask(request, options);
+      await require("./jflottery").doTask(request, options);
+    },
+    taskOption
+  );
+  
+  ///666积分补全。。。。
+    await scheduler.regTask(
+    "jflotteryad",
+    async (request) => {
+      await require("./jflotteryad.js").doTask(request, options);
     },
     taskOption
   );
