@@ -199,7 +199,7 @@ var start = async (params) => {
   await scheduler.regTask(
     "jflottery",
     async (request) => {
-      await require("./jflottery").doTask(request, options);
+      await require("./jflotteryad").doTask(request, options);
     },
     taskOption
   );
