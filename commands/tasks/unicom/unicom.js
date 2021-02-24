@@ -453,14 +453,14 @@ var start = async (params) => {
   );
 
   // 积分商城-积分猜拳-猜拳二号
- /** await scheduler.regTask(
+   await scheduler.regTask(
     "dailyFingerqd2",
     async (request) => {
       await require("./dailyFingerqd2.js").doTask(request, options);
     },
     taskOption
   );
-*/
+
   
   
   //套餐看视频得积分
