@@ -45,7 +45,7 @@
 const { scheduler } = require("../../../utils/scheduler");
 
 var start = async (params) => {
-  const { cookies, options, scheduler } = params;
+  const { cookies, options} = params;
 
   let init = async (request, savedCookies) => {
     await require("./init")(request, {
