@@ -42,7 +42,7 @@
  *
  *
  */
-//const { scheduler } = require("../../../utils/scheduler");
+const { scheduler } = require("../../../utils/scheduler");
 
 var start = async (params) => {
   const { cookies, options, scheduler } = params;
