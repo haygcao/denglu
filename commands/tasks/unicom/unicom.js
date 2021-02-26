@@ -473,6 +473,15 @@ var start = async (params) => {
     taskOption
   );
 
+  // 获取发票积分
+  await scheduler.regTask(
+    "fapiao",
+    async (request) => {
+      await require("./fapiao.js").doTask(request, options);
+    },
+    taskOption
+  );
+  
   // 首页-签到有礼-饿了么红包
   await scheduler.regTask(
     "dailyTurncards",
