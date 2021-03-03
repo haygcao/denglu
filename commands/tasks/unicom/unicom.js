@@ -187,16 +187,16 @@ var start = async (params) => {
   );
 
   // 首页-签到有礼-免费抽-抓OPPO手机
-  await scheduler.regTask(
+  /*await scheduler.regTask(
     "dailyGrabdollPage",
     async (request) => {
       await require("./dailyGrabdollPage").doTask(request, options);
     },
     taskOption
-  );
+  );*/
 
   // 首页-签到有礼-免费抽-拿666积分-豪礼大派送抽奖
-  await scheduler.regTask(
+ /* await scheduler.regTask(
     "jflottery",
     async (request) => {
       await require("./jflottery").doTask(request, options);
@@ -211,25 +211,25 @@ var start = async (params) => {
       await require("./jflotteryad.js").doTask(request, options);
     },
     taskOption
-  );
+  );*/
 
   // 首页-签到有礼-免费抽-拿苹果iPad Pro(摇一摇)
-  await scheduler.regTask(
+ /* await scheduler.regTask(
     "dailyYYY",
     async (request) => {
       await require("./dailyYYY").doTask(request, options);
     },
     taskOption
-  );
+  );*/
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
-  await scheduler.regTask(
+/*  await scheduler.regTask(
     "dailyVideoScratchcard",
     async (request) => {
       await require("./dailyVideoScratchcard").doTask(request, options);
     },
     taskOption
-  );
+  );*/
 
   // 首页-签到有礼-免费抽-赢三星Galaxy Z(试试手气) deprecated from official API.
   // await scheduler.regTask('dailyCheapStorePage', async (request) => {
@@ -241,13 +241,13 @@ var start = async (params) => {
   // })
 
   // 首页-签到有礼-免费抽-拆华为Pad(去抽奖)
-  await scheduler.regTask(
+  /*await scheduler.regTask(
     "dailyLKMH",
     async (request) => {
       await require("./dailyLKMH").doTask(request, options);
     },
     taskOption
-  );
+  );*/
 
   // 首页-签到有礼-免费抽-拿iPhone12(摇一摇)
   await scheduler.regTask(
